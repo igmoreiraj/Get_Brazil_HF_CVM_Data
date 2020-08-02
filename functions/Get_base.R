@@ -24,7 +24,7 @@ Exporta_Db<-function(df){
   
   dbBegin(conn)
   
-  #Insert de DE-PARA
+  #Insert de DE-PARA  - Make sure the database has the same column names as in the code below
   sql=paste0(
     "INSERT into dataset_fundos",
     "  (CNPJ_FUNDO,DENOM_SOCIAL,CLASSE,DT_COMPTC,VL_TOTAL,VL_QUOTA,VL_PATRIM_LIQ,CAPTC_DIA,RESG_DIA,NR_COTST)", #colunas no banco de dados (PARA)
